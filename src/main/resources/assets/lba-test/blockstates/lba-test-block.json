@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "lba-test:block/lba-test-block"
+    }
+  }
+}
