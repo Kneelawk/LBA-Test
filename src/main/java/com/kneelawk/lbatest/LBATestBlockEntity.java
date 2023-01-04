@@ -13,17 +13,17 @@ public class LBATestBlockEntity extends BlockEntity implements UnloadableBlockEn
     @Override
     public void markRemoved() {
         super.markRemoved();
-        LBATest.LOGGER.info("# markRemoved ({})", this);
+        LBATest.LOGGER.info("# markRemoved ({} @ {})", this, getPos());
     }
 
     @Override
     public void cancelRemoval() {
         super.cancelRemoval();
-        LBATest.LOGGER.info("# cancelRemoval ({})", this);
+        LBATest.LOGGER.info("# cancelRemoval ({} @ {})", this, getPos());
     }
 
     @Override
     public void onChunkUnload() {
-        LBATest.LOGGER.info("# onChunkUnload ({})", this);
+        LBATest.LOGGER.info("# onChunkUnload ({} @ {})", this, getPos());
     }
 }
